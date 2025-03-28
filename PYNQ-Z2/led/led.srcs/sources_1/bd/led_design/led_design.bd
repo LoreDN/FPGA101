@@ -1,0 +1,61 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x46584EF346584EF3",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../led.gen/sources_1/bd/led_design",
+      "name": "led_design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "switch_to_led_0": ""
+    },
+    "ports": {
+      "switch_0": {
+        "direction": "I"
+      },
+      "led_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "switch_to_led_0": {
+        "vlnv": "xilinx.com:module_ref:switch_to_led:1.0",
+        "ip_revision": "1",
+        "xci_name": "led_design_switch_to_led_0_0",
+        "xci_path": "ip\\led_design_switch_to_led_0_0\\led_design_switch_to_led_0_0.xci",
+        "inst_hier_path": "switch_to_led_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "switch_to_led",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "switch": {
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "switch_0_1": {
+        "ports": [
+          "switch_0",
+          "switch_to_led_0/switch"
+        ]
+      },
+      "switch_to_led_0_led": {
+        "ports": [
+          "switch_to_led_0/led",
+          "led_0"
+        ]
+      }
+    }
+  }
+}
