@@ -1,0 +1,22 @@
+# ignore Vitis settings
+_ide
+
+# ignore everithing
+*
+
+# Unignore the README.txt file
+!/README.txt
+
+# Unignore all directories
+!*/
+
+# Only allow .src and .runs subfolders
+!**/*.srcs/
+!**/*.srcs/**
+
+# Allow configuration.txt files
+!**/*configuration.txt
+
+# Allow .xpr projects
+!**/*.xpr
+
