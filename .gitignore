@@ -5,7 +5,7 @@ _ide
 *
 
 # Unignore the README.txt file
-!/README.txt
+!/README.md
 
 # Unignore all directories
 !*/
